@@ -1,0 +1,225 @@
+<html lang="en"><style>* { -webkit-text-size-adjust: 109.00000000000001% !important; }</style><head><style>* { -webkit-text-size-adjust: 109.00000000000001% !important; }</style><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<title>Perfect Clean Fife - Multi Sheet Hub (HTTPS)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overscroll-behavior-y:contain;font-family:system-ui,-apple-system,sans-serif;background:#f8fafc;color:#111827}
+.header{background:#fff;border-bottom:2px solid #0e7490;padding:12px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:40}
+.header img{width:52px;height:52px;border-radius:50%;border:2px solid #0e7490;object-fit:cover}
+.header h1{font-size:20px;font-weight:800;color:#111827}
+.header p{font-size:11px;color:#0e7490;font-weight:700;letter-spacing:.06em}
+.https-badge{background:#dcfce7;color:#14532d;border:1px solid #86efac;padding:4px 8px;border-radius:12px;font-size:10px;font-weight:700;margin-left:auto}
+.banner{margin:10px;border-radius:14px;padding:14px;font-weight:600;font-size:13px}
+.banner-blue{background:#2563eb;color:#fff;text-align:center}
+.banner-blue button{background:#fff;color:#2563eb;border:0;padding:12px 22px;border-radius:12px;font-weight:800;margin-top:10px;cursor:pointer;font-size:15px}
+.banner-green{background:#dcfce7;color:#14532d;border:1.5px solid #16a34a}
+.banner-orange{background:#ffedd5;color:#7c2d12;border:1.5px solid #fb923c}
+.banner-red{background:#fef2f2;color:#7f1d1d;border:1.5px solid #fca5a5}
+.card{background:#fff;border:1.5px solid #6b7280;border-radius:14px;padding:14px;margin:10px;overflow:hidden}
+label{display:block;font-size:13px;font-weight:700;color:#111827;margin:10px 0 4px}
+input,textarea,select{width:100%;padding:12px;border:1.5px solid #6b7280;border-radius:10px;font-size:16px;color:#000;background:#fff}
+.chip{display:inline-block;padding:7px 12px;border:1.5px solid #6b7280;border-radius:20px;font-size:12px;font-weight:700;margin:3px;cursor:pointer;background:#fff;color:#111827}
+.chip.active{background:#2563eb;color:#fff;border-color:#1d4ed8}
+.time-grid{display:grid;grid-template-columns:1fr 48px;gap:6px;margin:6px 0}
+.time-grid button{height:42px;background:#111827;color:#fff;border:0;border-radius:8px;font-weight:800;font-size:11px;cursor:pointer}
+.btn-green{background:#16a34a;color:#fff;border:0;padding:15px;border-radius:14px;font-weight:800;width:100%;cursor:pointer;margin-top:10px}
+.btn-black{background:#111827;color:#fff;border:0;padding:12px;border-radius:10px;font-weight:700;width:100%;cursor:pointer;margin-top:8px}
+.btn-outline{background:#fff;color:#111827;border:1.5px solid #111827;padding:10px;border-radius:10px;font-weight:600;width:100%;cursor:pointer;margin-top:8px}
+.tabs{display:flex;background:#fff;border-bottom:2px solid #e5e7eb;position:sticky;top:77px;z-index:30}
+.tab{flex:1;padding:13px;text-align:center;font-weight:800;font-size:13px;cursor:pointer;border-bottom:3px solid transparent;color:#6b7280}
+.tab.active{color:#111827;border-bottom-color:#0e7490;background:#f0f9ff}
+.sticky-bottom{position:sticky;bottom:0;background:rgba(255,255,255,.97);border-top:1px solid #e5e7eb;padding:12px;z-index:20}
+.hidden{display:none}
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:12px 20px;border-radius:24px;font-weight:600;z-index:99}
+</style>
+<script>
+// FORCE HTTPS - critical for GPS
+if(location.protocol==='http:' && location.hostname!=='localhost' && location.hostname!=='127.0.0.1' && !location.hostname.includes('container')){
+  location.replace('https://'+location.host+location.pathname+location.search+location.hash);
+}
+</script>
+</head>
+<body>
+<div class="header">
+<img src="data:image/jpeg;base64,[STRIPPED]" alt="Perfect Clean">
+<div><h1>Perfect Clean Fife</h1><p>CLEANER SPACES • BETTER PLACES</p></div>
+<div class="https-badge" id="httpsBadge" style="background: rgb(220, 252, 231); color: rgb(20, 83, 45);">HTTPS ✅ Secure</div>
+</div>
+
+<div id="httpsWarning"></div>
+<div id="gpsBanner"><div class="banner banner-blue"><b>📍 TAP HERE TO ENABLE GPS TRACKING</b><br>Required for all reports - iPhone will ask for permission<br><button onclick="requestGPS()">ENABLE GPS NOW</button><div style="margin-top:8px;font-size:11px;opacity:.9">This tap is required by iOS Safari</div></div></div>
+
+<div class="tabs">
+<div class="tab active" data-tab="UPLIFT">UPLIFT</div>
+<div class="tab" data-tab="TIPPING">TIPPING</div>
+<div class="tab" data-tab="SHIFT">SHIFT</div>
+</div>
+
+<div id="view-UPLIFT">
+<div class="card"><h2>📍 GPS Location (Auto on all forms)</h2><div id="upliftLoc" style="font-size:12px;color:#111827;font-weight:600">No GPS yet - tap ENABLE GPS at top</div><button class="btn-outline" onclick="requestGPS()">📍 Update Location</button></div>
+<div class="card"><h2>Team &amp; Reason</h2><label>Team</label><div id="teamChips"><span class="chip">David H</span><span class="chip">Dale C</span><span class="chip">Darren B</span><span class="chip">George B</span><span class="chip">Connor B</span><span class="chip">Morgan R</span><span class="chip">Nicu</span><span class="chip">Mirabela</span><span class="chip">Marian</span><span class="chip">Mihaela</span><span class="chip">Nicolae</span><span class="chip">Gemma H</span><span class="chip">Sharon P</span><span class="chip">Maxine S</span><span class="chip">Shannon S</span><span class="chip">Ryan B</span><span class="chip">Darren M (leader)</span><span class="chip">Lynne W (leader)</span><span class="chip">David A</span><span class="chip">Alan M</span><span class="chip">David H</span><span class="chip">Dale C</span><span class="chip">Darren B</span><span class="chip">George B</span><span class="chip">Connor B</span><span class="chip">Morgan R</span><span class="chip">Nicu</span><span class="chip">Mirabela</span><span class="chip">Marian</span><span class="chip">Mihaela</span><span class="chip">Nicolae</span><span class="chip">Gemma H</span><span class="chip">Sharon P</span><span class="chip">Maxine S</span><span class="chip">Shannon S</span><span class="chip">Ryan B</span><span class="chip">Darren M (leader)</span><span class="chip">Lynne W (leader)</span><span class="chip">David A</span><span class="chip">Alan M</span></div><label>Reason</label><div id="reasonChips"><span class="chip">Standard to Major</span><span class="chip">Partial to Major</span><span class="chip">Trauma Clean</span><span class="chip">Sharps Removal</span><span class="chip">Bodily Waste</span><span class="chip">Flea Treatment</span><span class="chip">Excess Waste/Hoarder</span><span class="chip">Gas Canister Removal</span><span class="chip">Tyre Removal</span><span class="chip">Other</span><span class="chip">Standard to Major</span><span class="chip">Partial to Major</span><span class="chip">Trauma Clean</span><span class="chip">Sharps Removal</span><span class="chip">Bodily Waste</span><span class="chip">Flea Treatment</span><span class="chip">Excess Waste/Hoarder</span><span class="chip">Gas Canister Removal</span><span class="chip">Tyre Removal</span><span class="chip">Other</span></div></div>
+<div class="card"><h2>Job Details</h2><input id="addr" placeholder="Property Address - e.g. 25 Kenilworth Drive, Kirkcaldy" style="margin-bottom:8px"><select id="jtype"><option>H</option><option>PO</option><option>H/PO</option></select><input id="jnum" placeholder="Job Number" style="margin-top:8px"><textarea id="jnotes" rows="3" placeholder="Details/Notes" style="margin-top:8px"></textarea><input id="gas" type="number" placeholder="Gas Canister Qty" style="margin-top:8px"><input id="tyre" type="number" placeholder="Tyre Qty" style="margin-top:8px"></div>
+<div class="card"><h2>Photos → Collage</h2><input type="file" id="uPhotos" accept="image/*" multiple="" capture="environment"><div id="uGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px"></div><canvas id="uCanvas" class="hidden"></canvas></div>
+<div class="card"><h2>Preview</h2><textarea id="uPrev" rows="10" style="font-family:monospace;font-size:11px"></textarea></div>
+<div class="sticky-bottom"><button class="btn-green" onclick="sendUplift()">SEND UPLIFT TO WHATSAPP (with GPS)</button></div>
+</div>
+
+<div id="view-TIPPING" class="hidden">
+<div class="card"><h2>📍 GPS</h2><div id="tipLoc" style="font-size:12px;font-weight:600">No GPS yet</div></div>
+<div class="card"><h2>Tipper Photos</h2><input type="file" id="tLeft" accept="image/*" capture="environment"><input type="file" id="tRight" accept="image/*" capture="environment" style="margin-top:6px"><input type="file" id="tBack" accept="image/*" capture="environment" style="margin-top:6px"><div id="tGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px"></div></div>
+<div class="card"><h2>Logistics</h2><select id="tVeh"><option>BL18 RZW - Tipper</option><option>LE25 MPX - Big Van</option><option>KX19 NTC - Tipper</option><option>CV21 UHP - Tipper</option><option>DS25 APK - Tipper</option><option>BG71 WSK - Tipper</option><option>LE25 MTO - Big Van</option><option>CV22 HCH - Tipper</option><option>YR25 DWZ - Luton</option><option>CV71 LYO - Tipper</option><option>CP21 BSZ - Tipper</option><option>BL18 RZW - Tipper</option><option>LE25 MPX - Big Van</option><option>KX19 NTC - Tipper</option><option>CV21 UHP - Tipper</option><option>DS25 APK - Tipper</option><option>BG71 WSK - Tipper</option><option>LE25 MTO - Big Van</option><option>CV22 HCH - Tipper</option><option>YR25 DWZ - Luton</option><option>CV71 LYO - Tipper</option><option>CP21 BSZ - Tipper</option></select><input id="tJobs" type="number" value="1" min="1" max="10" placeholder="Jobs on Load" style="margin-top:8px"><input id="tDate" type="date" style="margin-top:8px"><input id="tTime" type="time" style="margin-top:8px"><div id="tSites" style="margin-top:8px"><span class="chip">Cireco Dunfermline</span><span class="chip">Ladybank</span><span class="chip">Enva Glenrothes</span><span class="chip">Enva Newbridge</span><span class="chip">Recycle Fife Lochgelly Tip</span><span class="chip">Other</span><span class="chip">Cireco Dunfermline</span><span class="chip">Ladybank</span><span class="chip">Enva Glenrothes</span><span class="chip">Enva Newbridge</span><span class="chip">Recycle Fife Lochgelly Tip</span><span class="chip">Other</span></div><textarea id="tNotes" rows="2" placeholder="Notes" style="margin-top:8px"></textarea></div>
+<div class="card"><h2>Preview</h2><textarea id="tPrev" rows="10" style="font-family:monospace;font-size:11px"></textarea></div>
+<div class="sticky-bottom"><button class="btn-green" onclick="sendTipping()">SEND TIPPING TO WHATSAPP</button></div>
+</div>
+
+<div id="view-SHIFT" class="hidden">
+<div class="card"><h2>Shift Jobs</h2><div id="jobsList"><div class="card"><input value="" placeholder="Job Address" oninput="shiftJobs[0].address=this.value;updatePreviews()" style="margin-bottom:6px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px"><div><div class="time-grid"><input type="time" value="" oninput="shiftJobs[0].arrived=this.value"><button onclick="shiftJobs[0].arrived=nowHM();this.previousElementSibling.value=shiftJobs[0].arrived">NOW</button></div></div><div><div class="time-grid"><input type="time" value="" oninput="shiftJobs[0].finished=this.value"><button onclick="shiftJobs[0].finished=nowHM();this.previousElementSibling.value=shiftJobs[0].finished">NOW</button></div></div></div><div style="font-size:11px;margin-top:6px">No location <button onclick="if(globalLocation){shiftJobs[0].location={...globalLocation};renderJobs();}else requestGPS()" style="margin-left:6px;padding:3px 8px;border-radius:6px;border:1px solid #6b7280;background:#fff;font-size:11px">LOG LOCATION</button></div></div></div><button class="btn-black" onclick="addJob()">+ ADD JOB</button></div>
+<div class="card"><h2>Preview</h2><textarea id="sPrev" rows="12" style="font-family:monospace;font-size:11px"></textarea></div>
+<div class="sticky-bottom"><button class="btn-green" onclick="sendShift()">SEND SHIFT REPORT TO WHATSAPP</button></div>
+</div>
+
+<div id="toast" class="toast hidden">❌ GPS: Permission denied - you tapped Block</div>
+
+<script>
+let globalLocation=null, locStatus='idle', locError='', watchId=null;
+let uPhotos=[], tPhotos={}, TEAM=["David H","Dale C","Darren B","George B","Connor B","Morgan R","Nicu","Mirabela","Marian","Mihaela","Nicolae","Gemma H","Sharon P","Maxine S","Shannon S","Ryan B","Darren M (leader)","Lynne W (leader)","David A","Alan M"], REASONS=["Standard to Major","Partial to Major","Trauma Clean","Sharps Removal","Bodily Waste","Flea Treatment","Excess Waste/Hoarder","Gas Canister Removal","Tyre Removal","Other"], VEHICLES=["BL18 RZW - Tipper","LE25 MPX - Big Van","KX19 NTC - Tipper","CV21 UHP - Tipper","DS25 APK - Tipper","BG71 WSK - Tipper","LE25 MTO - Big Van","CV22 HCH - Tipper","YR25 DWZ - Luton","CV71 LYO - Tipper","CP21 BSZ - Tipper"], SITES=["Cireco Dunfermline","Ladybank","Enva Glenrothes","Enva Newbridge","Recycle Fife Lochgelly Tip","Other"];
+function nowHM(){const d=new Date();return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');}
+function todayISO(){return new Date().toISOString().slice(0,10);}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.remove('hidden');setTimeout(()=>t.classList.add('hidden'),3000);}
+
+function checkHTTPS(){
+  const badge=document.getElementById('httpsBadge');
+  const warn=document.getElementById('httpsWarning');
+  const isSecure=window.isSecureContext;
+  if(isSecure){ badge.textContent='HTTPS ✅ Secure'; badge.style.background='#dcfce7'; badge.style.color='#14532d';
+  } else {
+    badge.textContent='HTTP ❌ Not Secure'; badge.style.background='#fef2f2'; badge.style.color='#7f1d1d';
+    warn.innerHTML=`<div class="banner banner-red"><b>⚠️ NOT HTTPS - GPS WILL NOT WORK</b><br>This page must be opened via https://<br>Current: ${location.protocol}//${location.host}<br><br>For Netlify/Cloudflare it is automatically HTTPS. For your own server, install free SSL via cPanel → Let's Encrypt.<br><button onclick="location.protocol='https:'" style="margin-top:8px;padding:8px 14px;border-radius:8px;background:#7f1d1d;color:#fff;border:0;font-weight:700;cursor:pointer">Switch to HTTPS Now</button></div>`;
+  }
+}
+
+function updateGPSBanner(){
+  const el=document.getElementById('gpsBanner');
+  const secure=window.isSecureContext;
+  let html='';
+  if(!secure){ html=`<div class="banner banner-red">📍 GPS blocked - page is not HTTPS. Host on https:// for GPS to work.</div>`; }
+  else if(locStatus==='idle'){ html=`<div class="banner banner-blue"><b>📍 TAP HERE TO ENABLE GPS TRACKING</b><br>Required for all reports - iPhone will ask for permission<br><button onclick="requestGPS()">ENABLE GPS NOW</button><div style="margin-top:8px;font-size:11px;opacity:.9">This tap is required by iOS Safari</div></div>`; }
+  else if(locStatus==='locating'){ html=`<div class="banner banner-green" style="background:#fef9c3;color:#854d0e">📍 Locating... Getting GPS fix - move outside if needed, wait 5-10 seconds...</div>`; }
+  else if(locStatus==='blocked'||locStatus==='denied'){ html=`<div class="banner banner-orange"><b>📍 Location Blocked</b><br>${locError}<br><div style="display:flex;gap:8px;margin-top:10px"><button onclick="requestGPS()" style="flex:1;padding:10px;border-radius:10px;background:#111827;color:#fff;font-weight:700;border:0">Try Again</button><button onclick="alert('iPhone: Settings → Privacy & Security → Location Services → ON → Safari Websites → Allow While Using. Then Safari aA → Website Settings → Location → Allow. Android: Tap 🔒 lock icon → Site settings → Location → Allow.')" style="flex:1;padding:10px;border-radius:10px;background:#fff;border:1px solid #9ca3af;font-weight:700">How to Enable</button></div></div>`; }
+  else if(locStatus==='granted'&&globalLocation){ html=`<div class="banner banner-green">📍 GPS Active: ${globalLocation.lat.toFixed(6)}, ${globalLocation.lng.toFixed(6)} ±${globalLocation.accuracy}m at ${globalLocation.timestamp}<br><a href="https://maps.google.com?q=${globalLocation.lat},${globalLocation.lng}" target="_blank" style="font-weight:800;color:#14532d;text-decoration:underline">Open in Maps</a> | <a href="#" onclick="requestGPS();return false" style="font-weight:700;color:#14532d">Update</a> ✅</div>`; }
+  el.innerHTML=html;
+  document.getElementById('upliftLoc').innerHTML=globalLocation?`${globalLocation.lat.toFixed(6)}, ${globalLocation.lng.toFixed(6)} ±${globalLocation.accuracy}m<br>${globalLocation.timestamp}<br><a href="https://maps.google.com?q=${globalLocation.lat},${globalLocation.lng}" target="_blank">Open in Maps</a>`:'No GPS yet - tap ENABLE GPS at top';
+  document.getElementById('tipLoc').innerHTML=globalLocation?`${globalLocation.lat.toFixed(6)}, ${globalLocation.lng.toFixed(6)} ±${globalLocation.accuracy}m`:'No GPS yet';
+}
+
+function requestGPS(){
+  if(!window.isSecureContext){ toast('❌ Must be HTTPS for GPS'); checkHTTPS(); return; }
+  if(!navigator.geolocation){ locStatus='denied'; locError='Geolocation not supported'; updateGPSBanner(); return; }
+  locStatus='locating'; updateGPSBanner(); toast('📍 Requesting GPS - tap Allow when asked');
+  navigator.geolocation.getCurrentPosition(
+    pos=>{
+      globalLocation={lat:pos.coords.latitude,lng:pos.coords.longitude,accuracy:Math.round(pos.coords.accuracy),timestamp:new Date().toLocaleString('en-GB'),iso:new Date().toISOString()};
+      locStatus='granted'; toast(`✅ GPS: ${globalLocation.lat.toFixed(5)}, ${globalLocation.lng.toFixed(5)} ±${globalLocation.accuracy}m`);
+      if(watchId!==null) navigator.geolocation.clearWatch(watchId);
+      watchId=navigator.geolocation.watchPosition(p=>{globalLocation={lat:p.coords.latitude,lng:p.coords.longitude,accuracy:Math.round(p.coords.accuracy),timestamp:new Date().toLocaleString('en-GB'),iso:new Date().toISOString()};updateGPSBanner();updatePreviews();},null,{enableHighAccuracy:true,maximumAge:10000});
+      updateGPSBanner(); updatePreviews(); localStorage.setItem('pcf_gps',JSON.stringify(globalLocation));
+      if(window.shiftJobs&&shiftJobs.length>0&&!shiftJobs[0].location){shiftJobs[0].location={...globalLocation}; renderJobs();}
+    },
+    err=>{
+      if(err.code===1){locStatus='blocked';locError='Permission denied - you tapped Block';}
+      else if(err.code===2){locStatus='denied';locError='Position unavailable - no signal, try outside';}
+      else{locStatus='denied';locError='Timeout - poor signal, try again outside';}
+      toast('❌ GPS: '+locError); updateGPSBanner();
+    },
+    {enableHighAccuracy:true,timeout:15000,maximumAge:0}
+  );
+}
+
+// --- rest of app logic ---
+let shiftJobs=[{id:Date.now(),address:'',arrived:'',started:'',finished:'',status:'',location:null}];
+let selectedTeam=new Set(), selectedReason=new Set();
+
+function compress(file){return new Promise(res=>{const r=new FileReader();r.onload=()=>{const img=new Image();img.onload=()=>{const s=Math.min(1,1024/img.width);const c=document.createElement('canvas');c.width=img.width*s;c.height=img.height*s;c.getContext('2d').drawImage(img,0,0,c.width,c.height);res(c.toDataURL('image/jpeg',0.72));};img.onerror=()=>res(r.result);img.src=r.result;};r.readAsDataURL(file);});}
+
+function init(){
+  checkHTTPS();
+  const savedGps=localStorage.getItem('pcf_gps'); if(savedGps){globalLocation=JSON.parse(savedGps); locStatus='granted';}
+  updateGPSBanner();
+  // chips
+  const teamDiv=document.getElementById('teamChips'); TEAM.forEach(t=>{const s=document.createElement('span');s.className='chip';s.textContent=t;s.onclick=()=>{if(selectedTeam.has(t))selectedTeam.delete(t);else selectedTeam.add(t);s.classList.toggle('active');updatePreviews();};teamDiv.appendChild(s);});
+  const reasonDiv=document.getElementById('reasonChips'); REASONS.forEach(r=>{const s=document.createElement('span');s.className='chip';s.textContent=r;s.onclick=()=>{if(selectedReason.has(r))selectedReason.delete(r);else selectedReason.add(r);s.classList.toggle('active');updatePreviews();};reasonDiv.appendChild(s);});
+  const veh=document.getElementById('tVeh'); VEHICLES.forEach(v=>{const o=document.createElement('option');o.textContent=v;veh.appendChild(o);});
+  const sites=document.getElementById('tSites'); SITES.forEach(s=>{const c=document.createElement('span');c.className='chip';c.textContent=s;c.onclick=()=>{sites.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));c.classList.add('active');updatePreviews();};sites.appendChild(c);});
+  document.getElementById('tDate').value=todayISO(); document.getElementById('tTime').value=nowHM();
+  document.querySelectorAll('.tab').forEach(tab=>tab.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));tab.classList.add('active');const t=tab.dataset.tab;document.querySelectorAll('[id^="view-"]').forEach(v=>v.classList.add('hidden'));document.getElementById('view-'+t).classList.remove('hidden');}));
+  document.getElementById('uPhotos').addEventListener('change',async e=>{for(const f of e.target.files){uPhotos.push(await compress(f));} renderU(); updatePreviews();});
+  document.getElementById('tLeft').addEventListener('change',async e=>{tPhotos.left=await compress(e.target.files[0]); renderT();});
+  document.getElementById('tRight').addEventListener('change',async e=>{tPhotos.right=await compress(e.target.files[0]); renderT();});
+  document.getElementById('tBack').addEventListener('change',async e=>{tPhotos.back=await compress(e.target.files[0]); renderT();});
+  renderJobs();
+  updatePreviews();
+  // block pull to refresh
+  let sy=0; window.addEventListener('touchstart',e=>sy=e.touches[0].clientY,{passive:true});
+  window.addEventListener('touchmove',e=>{if(window.scrollY===0&&e.touches[0].clientY>sy+10)e.preventDefault();},{passive:false});
+  window.addEventListener('beforeunload',e=>{if(document.getElementById('addr').value||uPhotos.length>0){e.preventDefault();e.returnValue='Unsaved data';return e.returnValue;}});
+}
+function renderU(){const g=document.getElementById('uGrid');g.innerHTML='';uPhotos.forEach((s,i)=>{const img=document.createElement('img');img.src=s;img.style.width='100%';img.style.height='80px';img.style.objectFit='cover';img.style.borderRadius='8px';img.onclick=()=>{uPhotos.splice(i,1);renderU();updatePreviews();};g.appendChild(img);});}
+function renderT(){const g=document.getElementById('tGrid');g.innerHTML='';Object.entries(tPhotos).forEach(([k,s])=>{const d=document.createElement('div');d.innerHTML=`<small>${k}</small><br><img src="${s}" style="width:100%;height:60px;object-fit:cover;border-radius:6px">`;g.appendChild(d);});}
+function renderJobs(){const l=document.getElementById('jobsList');l.innerHTML='';shiftJobs.forEach((j,i)=>{const d=document.createElement('div');d.className='card';d.innerHTML=`<input value="${j.address}" placeholder="Job Address" oninput="shiftJobs[${i}].address=this.value;updatePreviews()" style="margin-bottom:6px"><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px"><div><div class="time-grid"><input type="time" value="${j.arrived}" oninput="shiftJobs[${i}].arrived=this.value"><button onclick="shiftJobs[${i}].arrived=nowHM();this.previousElementSibling.value=shiftJobs[${i}].arrived">NOW</button></div></div><div><div class="time-grid"><input type="time" value="${j.finished}" oninput="shiftJobs[${i}].finished=this.value"><button onclick="shiftJobs[${i}].finished=nowHM();this.previousElementSibling.value=shiftJobs[${i}].finished">NOW</button></div></div></div><div style="font-size:11px;margin-top:6px">${j.location?`📍 ${j.location.lat.toFixed(5)},${j.location.lng.toFixed(5)} <a href="https://maps.google.com?q=${j.location.lat},${j.location.lng}" target="_blank">Map</a>`:'No location'} <button onclick="if(globalLocation){shiftJobs[${i}].location={...globalLocation};renderJobs();}else requestGPS()" style="margin-left:6px;padding:3px 8px;border-radius:6px;border:1px solid #6b7280;background:#fff;font-size:11px">LOG LOCATION</button></div>`;l.appendChild(d);});}
+function addJob(){shiftJobs.push({id:Date.now(),address:'',arrived:'',started:'',finished:'',status:'',location:globalLocation?{...globalLocation}:null});renderJobs();}
+function buildTextU(){const gps=globalLocation?`📍 GPS: https://maps.google.com?q=${globalLocation.lat},${globalLocation.lng} ±${globalLocation.accuracy}m ${globalLocation.timestamp}`:'📍 GPS: Not logged - needs HTTPS + tap ENABLE GPS';return `PERFECT CLEAN FIFE - UPLIFT\nTeam: ${Array.from(selectedTeam).join(', ')}\nReason: ${Array.from(selectedReason).join(', ')}\nAddress: ${document.getElementById('addr').value}\nJob Type: ${document.getElementById('jtype').value}\nJob No: ${document.getElementById('jnum').value}\nNotes: ${document.getElementById('jnotes').value}\nGas: ${document.getElementById('gas').value} Tyre: ${document.getElementById('tyre').value}\n\n${gps}\nPhotos: ${uPhotos.length}`;}
+function buildTextT(){const gps=globalLocation?`📍 GPS: https://maps.google.com?q=${globalLocation.lat},${globalLocation.lng}`:'No GPS';return `PERFECT CLEAN FIFE - TIPPING\nVehicle: ${document.getElementById('tVeh').value}\nDate: ${document.getElementById('tDate').value} ${document.getElementById('tTime').value}\nNotes: ${document.getElementById('tNotes')?.value||''}\n${gps}`;}
+function buildTextS(){let t=`PERFECT CLEAN FIFE - SHIFT\n`;shiftJobs.forEach((j,i)=>{t+=`${i+1}. ${j.address} Arr:${j.arrived} Fin:${j.finished} ${j.location?`GPS:https://maps.google.com?q=${j.location.lat},${j.location.lng}`:''}\n`;});if(globalLocation)t+=`\n📍 Current GPS: https://maps.google.com?q=${globalLocation.lat},${globalLocation.lng}`;return t;}
+function updatePreviews(){document.getElementById('uPrev').value=buildTextU();document.getElementById('tPrev').value=buildTextT();document.getElementById('sPrev').value=buildTextS();}
+async function share(text,file){try{if(file&&navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({text,files:[file]});toast('✅ Shared');return;}if(navigator.share){await navigator.share({text});if(file){const a=document.createElement('a');a.href=URL.createObjectURL(file);a.download=file.name;a.click();}return;}}catch(e){}await navigator.clipboard.writeText(text).catch(()=>{});if(file){const a=document.createElement('a');a.href=URL.createObjectURL(file);a.download=file.name;a.click();}window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank');}
+async function sendUplift(){const text=buildTextU();let file=null;if(uPhotos.length>0){const c=document.getElementById('uCanvas');const ctx=c.getContext('2d');const size=540;const cols=2;const rows=Math.ceil(uPhotos.length/cols);c.width=cols*size;c.height=rows*size;ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);await Promise.all(uPhotos.map((src,i)=>new Promise(r=>{const img=new Image();img.onload=()=>{const col=i%cols,row=Math.floor(i/cols);const scale=Math.min(size/img.width,size/img.height);ctx.drawImage(img,col*size+(size-img.width*scale)/2,row*size+(size-img.height*scale)/2,img.width*scale,img.height*scale);r();};img.src=src;})));const blob=await new Promise(r=>c.toBlob(r,'image/jpeg',0.85));file=new File([blob],'uplift.jpg',{type:'image/jpeg'});}share(text,file);}
+async function sendTipping(){const all=Object.values(tPhotos);const text=buildTextT();let file=null;if(all.length>0){const c=document.createElement('canvas');const ctx=c.getContext('2d');c.width=1080;c.height=540;ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);await Promise.all(all.map((src,i)=>new Promise(r=>{const img=new Image();img.onload=()=>{ctx.drawImage(img,i*360,0,360,360);r();};img.src=src;})));const blob=await new Promise(r=>c.toBlob(r,'image/jpeg',0.85));file=new File([blob],'tipping.jpg',{type:'image/jpeg'});}share(text,file);}
+function sendShift(){share(buildTextS(),null);}
+window.addEventListener('DOMContentLoaded',init);
+</script>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script>
+</body></html>
